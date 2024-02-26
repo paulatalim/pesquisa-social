@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa Social</title>
+</head>
+<body>
+    <header>
+        <h1>Partice da pesquisa Social de <span>Paula</span></h1>
+    </header>
+    <form id="form" action="./pesquisa.php" method="post">
+        <!-- <input type="hidden" name="accessKey" value="351b4306-c928-49d4-a6c1-70b61c852b3e"> -->
+        <!-- Informacoes pessoais -->
+        <fieldset class="basic-info">
+            <legend>Informações Pessoais</legend>
+            <div class="basic-name">
+                <!-- <label id="basic-name-title" for="dados-input-name"><strong>Nome</strong></label> -->
+                <input id="basic-name-input" type="text" name="name" placeholder="Nome">
+            </div>
+            <div class="basic-idade">
+                <input id="basic-idade-input" type="number" name="idade" placeholder="Idade">
+            </div>
+        </fieldset>
+        
+        <!-- Pergunta -->
+        
+        <fieldset class="quest1">
+            <legend>Você quer ficar comigo?</legend>
+
+            <div class="quest1-radio">
+                <input class="quest1-radio-input" id="quest1-radio-sim" type="radio" name="Resposta1" value="sim">
+                <label for="quest1-radio-sim">Sim</label> <br>
+            </div>
+            <div class="quest1-radio">
+                <input class="quest1-radio-input" id="quest1-radio-nao" type="radio" name="Resposta1" value="nao">
+                <label for="quest1-radio-nao">Não</label> <br>
+            </div>
+        </fieldset>
+
+        <fieldset class="quest2">
+            <legend>Você indicaria essa pesquisa para alguém?</legend>
+
+            <div class="quest2-radio">
+                <input class="quest2-radio-input" id="quest2-radio-sim" type="radio" name="Resposta2" value="sim">
+                <label for="quest2-radio-sim">Sim</label> <br>
+            </div>
+            <div class="quest2-radio">
+                <input class="quest2-radio-input" id="quest2-radio-nao" type="radio" name="Resposta2" value="nao">
+                <label for="quest2-radio-nao">Não</label> <br>
+            </div>
+        </fieldset>
+
+        <button class="btn-enviar" id="btn-enviar" type="submit">Enviar</button>
+    </form>
+</body>
+</html>
