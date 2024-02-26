@@ -12,6 +12,10 @@ $header = "From:paulactalim@gmail.com"."\r\n".
         "Reply-To: paulcatalim@gmail.com\r\n".
         "X=Mailer:PHP/".phpversion();
 
-mail($to,$subject,$body,$header);
+if(mail($to,$subject,$body,$header)) {
+    echo("email enviado com sucesso");
+} else {
+    echo("falha ao envia email");
+}
 
 ?>
