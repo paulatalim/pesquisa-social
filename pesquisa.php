@@ -5,7 +5,7 @@
 // $mensagem = addslashes($_POST['message']);
 
 $to = "paulactalim@gmail.com";
-$subject = "Emal teste";
+$subject = "Email teste";
 $body = "Nome: Paula \n".
         "Mensagem email test";
 $header = "From:paulactalim@gmail.com"."\r\n".
