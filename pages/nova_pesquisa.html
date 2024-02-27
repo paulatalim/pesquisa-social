@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style_nova_pesquisa.css">
     <title>Criar Pesquisa</title>
 </head>
 <body>
-    <header>
-        <h1>Crie sua própria Pesquisa Social</h1>
+    <header class="title">
+        <h1 id="title-content"><span id="title-content-parte1">Crie sua própria</span><br><span id="title-content-parte2">Pesquisa Social</span></h1>
     </header>
     <main>
-        <section class="informacoes">
-            <h2>Preencha os campos a seguir</h2>
+        <section class="info">
+            <h2 id="info-title">Preencha os campos a seguir</h2>
+            
+            <input type="text" class="info-input" id="info-name" placeholder="Nome">
+            <input type="email" class="info-input" name="Email" id="info-email" placeholder="Email">
 
-            <input type="text" placeholder="Nome">
-            <input type="email" name="Email" placeholder="Email">
-
-            <button>Criar pesquisa</button>
+            <button id="info-btn">Criar pesquisa</button>
         </section>
 
         <section class="compartilhar">
-            <h2>Compartilhe o link da sua pesquisa</h2>
-            <button>Copiar link</button>
+            <h2 id="compartilhar-title">Compartilhe o link da sua pesquisa</h2>
+            <button id="compartilhar-btn">Copiar link</button>
         </section>
     </main>
 </body>
