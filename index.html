@@ -16,10 +16,10 @@
             <legend>Informações Pessoais</legend>
             <div class="basic-name">
                 <!-- <label id="basic-name-title" for="dados-input-name"><strong>Nome</strong></label> -->
-                <input id="basic-name-input" type="text" name="name" placeholder="Nome">
+                <input id="basic-name-input" type="text" name="$nome" placeholder="Nome">
             </div>
             <div class="basic-idade">
-                <input id="basic-idade-input" type="number" name="idade" placeholder="Idade">
+                <input id="basic-idade-input" type="number" name="$idade" placeholder="Idade">
             </div>
         </fieldset>
         
@@ -29,11 +29,11 @@
             <legend>Você quer ficar comigo?</legend>
 
             <div class="quest1-radio">
-                <input class="quest1-radio-input" id="quest1-radio-sim" type="radio" name="Resposta1" value="sim">
+                <input class="quest1-radio-input" id="quest1-radio-sim" type="radio" name="$Ficaria com você" value="Sim">
                 <label for="quest1-radio-sim">Sim</label> <br>
             </div>
             <div class="quest1-radio">
-                <input class="quest1-radio-input" id="quest1-radio-nao" type="radio" name="Resposta1" value="nao">
+                <input class="quest1-radio-input" id="quest1-radio-nao" type="radio" name="$Ficaria com você" value="Não">
                 <label for="quest1-radio-nao">Não</label> <br>
             </div>
         </fieldset>
@@ -42,17 +42,18 @@
             <legend>Você indicaria essa pesquisa para alguém?</legend>
 
             <div class="quest2-radio">
-                <input class="quest2-radio-input" id="quest2-radio-sim" type="radio" name="Resposta2" value="sim">
+                <input class="quest2-radio-input" id="quest2-radio-sim" type="radio" name="$Indicaria você a alguém" value="Sim">
                 <label for="quest2-radio-sim">Sim</label> <br>
             </div>
             <div class="quest2-radio">
-                <input class="quest2-radio-input" id="quest2-radio-nao" type="radio" name="Resposta2" value="nao">
+                <input class="quest2-radio-input" id="quest2-radio-nao" type="radio" name="$Indicaria você a alguém" value="Não">
                 <label for="quest2-radio-nao">Não</label> <br>
             </div>
         </fieldset>
 
+        <input type="hidden" name="subject" value="Uma resposta da Pesquisa Social foi enviada">
         <input type="hidden" name="replyTo" value="paulactalim@gmail.com">
-        <input type="hidden" name="redirectTo" value="https://paulatalim.github.io/pesquisa-social/finalizar_pesquisa.html">
+        <input type="hidden" name="redirectTo" value="https://paulatalim.github.io/pesquisa-social/pages/finalizar_pesquisa.html">
         <button class="btn-enviar" id="btn-enviar" type="submit">Enviar</button>
     </form>
 </body>
