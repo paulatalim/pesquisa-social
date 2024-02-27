@@ -37,14 +37,32 @@
 }
 
 .info-input {
+    border-radius: 50px;
+    border: 2px solid rgba(160,0,255,1);
+    outline: none;
+    padding: 10px 20px;
+    background-color: rgb(245, 229, 255);
 
+    color: rgb(95, 0, 150);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+.info-input::placeholder {
+    color: rgba(160,0,255,1);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    
+}
+
+.info-input:active {
+    border-color: rgba(160,0,255,1);
 }
 
 #info-btn {
     padding: 10px;
     border: none;
     border-radius: 50px;
-
 
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
@@ -53,4 +71,27 @@
 
     background: linear-gradient(90deg, rgba(124,100,235,1) 0%, rgba(160,0,255,1) 100%);
     color: white;
+}
+
+.compartilhar {
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+#compartilhar-btn {
+    padding: 10px;
+    border: 3px solid rgba(160,0,255,1);
+    border-radius: 50px;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 12pt;
+
+    background: white;
+    color: rgba(160,0,255,1);
 }
