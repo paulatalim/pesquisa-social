@@ -9,8 +9,8 @@
     <header>
         <h1>Partice da pesquisa Social de <span>Paula</span></h1>
     </header>
-    <form id="form" action="pesquisa.php" method="post">
-        <!-- <input type="hidden" name="accessKey" value="351b4306-c928-49d4-a6c1-70b61c852b3e"> -->
+    <form id="form" action="https://api.staticforms.xyz/submit" method="post">
+        <input type="hidden" name="accessKey" value="351b4306-c928-49d4-a6c1-70b61c852b3e">
         <!-- Informacoes pessoais -->
         <fieldset class="basic-info">
             <legend>Informações Pessoais</legend>
@@ -51,6 +51,8 @@
             </div>
         </fieldset>
 
+        <input type="hidden" name="replyTo" value="paulactalim@gmail.com">
+        <input type="hidden" name="redirectTo" value="https://paulatalim.github.io/pesquisa-social/finalizar_pesquisa.html">
         <button class="btn-enviar" id="btn-enviar" type="submit">Enviar</button>
     </form>
 </body>
