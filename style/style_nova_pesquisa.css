@@ -6,7 +6,7 @@
 }
 
 .title {
-    background-color: blueviolet;
+    background-color: #EA0061;
     color: white;
 
     margin: 0;
@@ -38,25 +38,25 @@
 
 .info-input {
     border-radius: 50px;
-    border: 2px solid rgba(160,0,255,1);
+    border: 2px solid #EA0061;
     outline: none;
     padding: 10px 20px;
-    background-color: rgb(245, 229, 255);
+    background-color: #fff0f6;
 
-    color: rgb(95, 0, 150);
+    color: #EA0061;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
 }
 
 .info-input::placeholder {
-    color: rgba(160,0,255,1);
+    color: #d26693;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     
 }
 
 .info-input:active {
-    border-color: rgba(160,0,255,1);
+    border-color: #EA0061;
 }
 
 #info-btn {
@@ -69,7 +69,7 @@
     letter-spacing: 2px;
     font-size: 12pt;
 
-    background: linear-gradient(90deg, rgba(124,100,235,1) 0%, rgba(160,0,255,1) 100%);
+    background: linear-gradient(90deg, #EB3600 0%, #EA0061 100%);
     color: white;
 }
 
@@ -84,7 +84,7 @@
 
 #compartilhar-btn {
     padding: 10px;
-    border: 3px solid rgba(160,0,255,1);
+    border: 3px solid #EA0061;
     border-radius: 50px;
 
     font-family: "Montserrat", sans-serif;
@@ -93,5 +93,5 @@
     font-size: 12pt;
 
     background: white;
-    color: rgba(160,0,255,1);
+    color: #EA0061;
 }
