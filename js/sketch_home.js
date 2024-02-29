@@ -28,12 +28,12 @@ function preencher_info () {
 
     document.getElementById("title-name").innerHTML = nome;
     document.getElementById("email").value = email;
-    document.getElementById("redirectTo").value = 'https://paulatalim.github.io/pesquisa-social/pages/finalizar_pesquisa.html?name=${nome}&e={email}';
+    document.getElementById("redirectTo").value = `https://paulatalim.github.io/pesquisa-social/pages/finalizar_pesquisa.html?name=${nome}&e=${email}`;
 }
 
 onload = () => {
     preencher_info();
-    
+
     document.getElementById("basic-name-input").oninput = habilitar_btn_enviar;
     document.getElementById("basic-idade-input").oninput = habilitar_btn_enviar;
     document.getElementById("quest1-radio-sim").onchange = habilitar_btn_enviar;
