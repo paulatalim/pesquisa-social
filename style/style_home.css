@@ -89,6 +89,7 @@ input::placeholder {
     font-weight: 600;
     cursor: pointer;
     transition-duration: 1s;
+    outline: none;
 }
 
 #quest1-radio-sim:checked + #quest1-label-sim,
