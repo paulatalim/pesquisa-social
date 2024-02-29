@@ -13,13 +13,12 @@
     <header class="title">
         <h1>Partice da pesquisa social de <span id="title-name">Paula</span></h1>
     </header>
-    <form id="form" action="https://api.staticforms.xyz/submit" method="post">
+    <form class="form" id="form" action="https://api.staticforms.xyz/submit" method="post">
         <input type="hidden" name="accessKey" value="351b4306-c928-49d4-a6c1-70b61c852b3e">
         <!-- Informacoes pessoais -->
         <fieldset class="basic-info">
             <legend>Informações Pessoais</legend>
             <div class="basic-name">
-                <!-- <label id="basic-name-title" for="dados-input-name"><strong>Nome</strong></label> -->
                 <input id="basic-name-input" type="text" name="$nome" placeholder="Nome">
             </div>
             <div class="basic-idade">
@@ -31,27 +30,29 @@
         
         <fieldset class="quest1">
             <legend>Você quer ficar comigo?</legend>
-
-            <div class="quest1-radio">
-                <input class="quest1-radio-input" id="quest1-radio-sim" type="radio" name="$Ficaria com você" value="Sim">
-                <label for="quest1-radio-sim">Sim</label> <br>
-            </div>
-            <div class="quest1-radio">
-                <input class="quest1-radio-input" id="quest1-radio-nao" type="radio" name="$Ficaria com você" value="Não">
-                <label for="quest1-radio-nao">Não</label> <br>
+            <div class="quest1-resp">
+                <div class="quest1-radio">
+                    <input class="quest1-radio-input" id="quest1-radio-sim" type="radio" name="$Ficaria com você" value="Sim">
+                    <label for="quest1-radio-sim" class="quest1-label" id="quest1-label-sim">Sim</label>
+                </div>
+                <div class="quest1-radio">
+                    <input class="quest1-radio-input" id="quest1-radio-nao" type="radio" name="$Ficaria com você" value="Não">
+                    <label for="quest1-radio-nao" class="quest1-label" id="quest1-label-nao">Não</label>
+                </div>
             </div>
         </fieldset>
 
         <fieldset class="quest2">
             <legend>Você indicaria essa pesquisa para alguém?</legend>
-
-            <div class="quest2-radio">
-                <input class="quest2-radio-input" id="quest2-radio-sim" type="radio" name="$Indicaria você a alguém" value="Sim">
-                <label for="quest2-radio-sim">Sim</label> <br>
-            </div>
-            <div class="quest2-radio">
-                <input class="quest2-radio-input" id="quest2-radio-nao" type="radio" name="$Indicaria você a alguém" value="Não">
-                <label for="quest2-radio-nao">Não</label> <br>
+            <div class="quest2-resp">
+                <div class="quest2-radio">
+                    <input class="quest2-radio-input" id="quest2-radio-sim" type="radio" name="$Indicaria você a alguém" value="Sim">
+                    <label for="quest2-radio-sim" class="quest2-label" id="quest2-label-sim">Sim</label>
+                </div>
+                <div class="quest2-radio">
+                    <input class="quest2-radio-input" id="quest2-radio-nao" type="radio" name="$Indicaria você a alguém" value="Não">
+                    <label for="quest2-radio-nao" class="quest2-label" id="quest2-label-nao">Não</label>
+                </div>
             </div>
         </fieldset>
 
