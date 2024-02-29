@@ -66,3 +66,48 @@ input::placeholder {
     color: #d26693;
     font-weight: 700;
 }
+
+.quest1-resp, .quest2-resp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.quest1-radio-input, .quest2-radio-input {
+    display: none;
+}
+
+.quest1-label, .quest2-label {
+    background-color: #fff;
+    color: #EA0061;
+
+    padding: 10px 30px;
+    border: 3px solid #EA0061;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+#quest1-radio-sim:checked + #quest1-label-sim,
+#quest1-radio-nao:checked + #quest1-label-nao,
+#quest2-radio-sim:checked + #quest2-label-sim,
+#quest2-radio-nao:checked + #quest2-label-nao {
+    background-color: #EA0061;
+    color: #fff;
+}
+
+.btn-enviar {
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 12pt;
+
+    background: linear-gradient(90deg, #EB3600 0%, #EA0061 100%);
+    color: white;
+}
