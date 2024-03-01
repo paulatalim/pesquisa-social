@@ -13,7 +13,6 @@ function copiar_link() {
     btn.style.border = "none";
     btn.style.color = "white";
     btn.style.background = "#EA0061";
-    
 }
 
 onload = () => {
