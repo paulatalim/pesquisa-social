@@ -10,8 +10,9 @@ function habilitar_btn_enviar () {
     if (nome != '' && 
         idade != '' &&
         (quest1_sim == true || quest1_nao == true) &&
-        (quest2_sim == true || quest2_nao == true)) {
-            btn.style.background = "linear-gradient(90deg, #EB3600 0%, #EA0061 100%)";
+        (quest2_sim == true || quest2_nao == true)) 
+    {
+        btn.style.background = "linear-gradient(90deg, #EB3600 0%, #EA0061 100%)";
         btn.disabled = false;
     } else {
         btn.style.background = "linear-gradient(90deg, #df896f 0%, #d083a3 100%)";
