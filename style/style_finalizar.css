@@ -61,3 +61,8 @@ main {
     font-size: 12pt;
     font-weight: 700;
 }
+
+#new-link {
+    color: #fff;
+    text-decoration: none;
+}

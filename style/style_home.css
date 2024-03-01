@@ -109,6 +109,6 @@ input::placeholder {
     letter-spacing: 2px;
     font-size: 12pt;
 
-    background: linear-gradient(90deg, #EB3600 0%, #EA0061 100%);
+    background: linear-gradient(90deg, #df896f 0%, #d083a3 100%);
     color: white;
 }
