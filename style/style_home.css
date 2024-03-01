@@ -6,6 +6,10 @@
     font-family: "Montserrat", sans-serif;
 }
 
+body {
+    background-color: #fff;
+}
+
 .title {
     background-color: #EA0061;
     color: white;
