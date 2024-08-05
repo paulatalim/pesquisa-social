@@ -16,5 +16,5 @@ function copiar_link() {
 }
 
 onload = () => {
-    document.getElementById("copiar-link").onclick = copiar_link;
+    // document.getElementById("copiar-link").onclick = copiar_link;
 }

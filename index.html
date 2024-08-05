@@ -13,12 +13,13 @@
     
     <link rel="icon" href="./assets/icon.png">
     <link rel="stylesheet" href="./style/style_home.css">
-    <title>Pesquisa Social</title>
+    <title>Pesquisa de Satisfação</title>
 </head>
 <body>
     <header class="title">
-        <h1>Partice da pesquisa social de <span id="title-name">Paula</span></h1>
+        <h1>Partice da pesquisa de satifação de <span id="title-name">Paula</span></h1>
     </header>
+    
     <form class="form" id="form" action="https://api.staticforms.xyz/submit" method="post">
         <input type="hidden" name="accessKey" value="351b4306-c928-49d4-a6c1-70b61c852b3e">
         <!-- Informacoes pessoais -->
@@ -31,40 +32,261 @@
                 <input id="basic-idade-input" type="number" name="$idade" placeholder="Idade">
             </div>
         </fieldset>
-        
+
         <!-- Pergunta -->
+        <fieldset class="quest0">
+            <legend>De 0 a 10, qual foi o grau de satifação comigo na major?</legend>
+            <div class="quest0-resp">
+                <div class="quest0-radio">
+                    <input 
+                        class="quest0-radio-input" 
+                        id="quest0-radio-10" 
+                        type="radio" 
+                        name="$Satifação"
+                        value="10"
+                        onclick="habilitar_btn_enviar()">
+                    <label for="quest0-radio-10" class="quest0-label" id="quest0-label-10">10</label>
+                </div>
+                <div class="quest0-radio">
+                    <input 
+                        class="quest0-radio-input" 
+                        id="quest0-radio-9" 
+                        type="radio" 
+                        name="$Satifação" 
+                        value="9"
+                        onclick="habilitar_btn_enviar()">
+                    <label for="quest0-radio-9" class="quest0-label" id="quest0-label-9">9</label>
+                </div>
+                <div class="quest0-radio">
+                    <input 
+                        class="quest0-radio-input" 
+                        id="quest0-radio-8" 
+                        type="radio" 
+                        name="$Satifação" 
+                        value="8"
+                        onclick="habilitar_btn_enviar()">
+                    <label for="quest0-radio-8" class="quest0-label" id="quest0-label-8">8</label>
+                </div>
+                <div class="quest0-radio">
+                    <input 
+                        class="quest0-radio-input" 
+                        id="quest0-radio-7" 
+                        type="radio" 
+                        name="$Satifação" 
+                        value="7"
+                        onclick="habilitar_btn_enviar()">
+                    <label for="quest0-radio-7" class="quest0-label" id="quest0-label-7">7</label>
+                </div>
+                <div class="quest0-radio">
+                    <input 
+                        class="quest0-radio-input" 
+                        id="quest0-radio-6" 
+                        type="radio" 
+                        name="$Satifação" 
+                        value="6"
+                        onclick="habilitar_btn_enviar()">
+                    <label for="quest0-radio-6" class="quest0-label" id="quest0-label-6">6</label>
+                </div>
+                
+                <div class="quest0-radio">
+                    <input 
+                        class="quest0-radio-input" 
+                        id="quest0-radio-5" 
+                        type="radio" 
+                        name="$Satifação" 
+                        value="5"
+                        onclick="habilitar_btn_enviar()">
+                    <label for="quest0-radio-5" class="quest0-label" id="quest0-label-5">5</label>
+                </div>
+                <div class="quest0-radio">
+                    <input 
+                        class="quest0-radio-input" 
+                        id="quest0-radio-4" 
+                        type="radio" 
+                        name="$Satifação" 
+                        value="4"
+                        onclick="habilitar_btn_enviar()">
+                    <label for="quest0-radio-4" class="quest0-label" id="quest0-label-4">4</label>
+                </div>
+                <div class="quest0-radio">
+                    <input 
+                        class="quest0-radio-input" 
+                        id="quest0-radio-3" 
+                        type="radio" 
+                        name="$Satifação" 
+                        value="3"
+                        onclick="habilitar_btn_enviar()">
+                    <label for="quest0-radio-3" class="quest0-label" id="quest0-label-3">3</label>
+                </div>
+                <div class="quest0-radio">
+                    <input 
+                        class="quest0-radio-input" 
+                        id="quest0-radio-2" 
+                        type="radio" 
+                        name="$Satifação" 
+                        value="2"
+                        onclick="habilitar_btn_enviar()">
+                    <label for="quest0-radio-2" class="quest0-label" id="quest0-label-2">2</label>
+                </div>
+                <div class="quest0-radio">
+                    <input 
+                        class="quest0-radio-input" 
+                        id="quest0-radio-1" 
+                        type="radio" 
+                        name="$Satifação" 
+                        value="1"
+                        onclick="habilitar_btn_enviar()">
+                    <label for="quest0-radio-1" class="quest0-label" id="quest0-label-1">1</label>
+                </div>
+                <div class="quest0-radio"></div>
+                    <input 
+                        class="quest0-radio-input" 
+                        id="quest0-radio-0" 
+                        type="radio" 
+                        name="$Satifação" 
+                        value="0" 
+                        onclick="habilitar_btn_enviar()">
+                    <label for="quest0-radio-0" class="quest0-label" id="quest0-label-0">0</label>
+                </div>
+            </div>
+        </fieldset>
         
         <fieldset class="quest1">
-            <legend>Você quer ficar comigo?</legend>
+            <legend>Qual a chance de acontecer de novo?</legend>
             <div class="quest1-resp">
                 <div class="quest1-radio">
-                    <input class="quest1-radio-input" id="quest1-radio-sim" type="radio" name="$Ficaria com você" value="Sim">
-                    <label for="quest1-radio-sim" class="quest1-label" id="quest1-label-sim">Sim</label>
+                    <input 
+                        class="quest1-radio-input" 
+                        id="quest1-radio-10" 
+                        type="radio" 
+                        name="$Ficaria com você de novo"
+                        value="10"
+                        onclick="habilitar_btn_enviar()">
+                    <label for="quest1-radio-10" class="quest1-label" id="quest1-label-10">10</label>
                 </div>
                 <div class="quest1-radio">
-                    <input class="quest1-radio-input" id="quest1-radio-nao" type="radio" name="$Ficaria com você" value="Não">
-                    <label for="quest1-radio-nao" class="quest1-label" id="quest1-label-nao">Não</label>
+                    <input 
+                        class="quest1-radio-input" 
+                        id="quest1-radio-9" 
+                        type="radio" 
+                        name="$Ficaria com você de novo" 
+                        value="9"
+                        onclick="habilitar_btn_enviar()">
+                    <label for="quest1-radio-9" class="quest1-label" id="quest1-label-9">9</label>
+                </div>
+                <div class="quest1-radio">
+                    <input 
+                        class="quest1-radio-input" 
+                        id="quest1-radio-8" 
+                        type="radio" 
+                        name="$Ficaria com você de novo" 
+                        value="8"
+                        onclick="habilitar_btn_enviar()">
+                    <label for="quest1-radio-8" class="quest1-label" id="quest1-label-8">8</label>
+                </div>
+                <div class="quest1-radio">
+                    <input 
+                        class="quest1-radio-input" 
+                        id="quest1-radio-7" 
+                        type="radio" 
+                        name="$Ficaria com você de novo" 
+                        value="7"
+                        onclick="habilitar_btn_enviar()">
+                    <label for="quest1-radio-7" class="quest1-label" id="quest1-label-7">7</label>
+                </div>
+                <div class="quest1-radio">
+                    <input 
+                        class="quest1-radio-input" 
+                        id="quest1-radio-6" 
+                        type="radio" 
+                        name="$Ficaria com você de novo" 
+                        value="6"
+                        onclick="habilitar_btn_enviar()">
+                    <label for="quest1-radio-6" class="quest1-label" id="quest1-label-6">6</label>
+                </div>
+                
+                <div class="quest1-radio">
+                    <input 
+                        class="quest1-radio-input" 
+                        id="quest1-radio-5" 
+                        type="radio" 
+                        name="$Ficaria com você de novo" 
+                        value="5"
+                        onclick="habilitar_btn_enviar()">
+                    <label for="quest1-radio-5" class="quest1-label" id="quest1-label-5">5</label>
+                </div>
+                <div class="quest1-radio">
+                    <input 
+                        class="quest1-radio-input" 
+                        id="quest1-radio-4" 
+                        type="radio" 
+                        name="$Ficaria com você de novo" 
+                        value="4"
+                        onclick="habilitar_btn_enviar()">
+                    <label for="quest1-radio-4" class="quest1-label" id="quest1-label-4">4</label>
+                </div>
+                <div class="quest1-radio">
+                    <input 
+                        class="quest1-radio-input" 
+                        id="quest1-radio-3" 
+                        type="radio" 
+                        name="$Ficaria com você de novo" 
+                        value="3"
+                        onclick="habilitar_btn_enviar()">
+                    <label for="quest1-radio-3" class="quest1-label" id="quest1-label-3">3</label>
+                </div>
+                <div class="quest1-radio">
+                    <input 
+                        class="quest1-radio-input" 
+                        id="quest1-radio-2" 
+                        type="radio" 
+                        name="$Ficaria com você de novo" 
+                        value="2"
+                        onclick="habilitar_btn_enviar()">
+                    <label for="quest1-radio-2" class="quest1-label" id="quest1-label-2">2</label>
+                </div>
+                <div class="quest1-radio">
+                    <input 
+                        class="quest1-radio-input" 
+                        id="quest1-radio-1" 
+                        type="radio" 
+                        name="$Ficaria com você de novo" 
+                        value="1"
+                        onclick="habilitar_btn_enviar()">
+                    <label for="quest1-radio-1" class="quest1-label" id="quest1-label-1">1</label>
+                </div>
+                <div class="quest1-radio"></div>
+                    <input 
+                        class="quest1-radio-input" 
+                        id="quest1-radio-0" 
+                        type="radio" 
+                        name="$Ficaria com você de novo" 
+                        value="0" 
+                        onclick="habilitar_btn_enviar()">
+                    <label for="quest1-radio-0" class="quest1-label" id="quest1-label-0">0</label>
                 </div>
             </div>
         </fieldset>
 
-        <fieldset class="quest2">
+        <!-- <fieldset class="quest2">
             <legend>Você indicaria essa pesquisa para alguém?</legend>
             <div class="quest2-resp">
                 <div class="quest2-radio">
-                    <input class="quest2-radio-input" id="quest2-radio-sim" type="radio" name="$Indicaria você a alguém" value="Sim">
+                    <input class="quest2-radio-input" id="quest2-radio-sim" type="radio" name="$Indicaria você a alguém" value="Sim" onclick="habilitar_btn_enviar()">
                     <label for="quest2-radio-sim" class="quest2-label" id="quest2-label-sim">Sim</label>
                 </div>
                 <div class="quest2-radio">
-                    <input class="quest2-radio-input" id="quest2-radio-nao" type="radio" name="$Indicaria você a alguém" value="Não">
+                    <input class="quest2-radio-input" id="quest2-radio-nao" type="radio" name="$Indicaria você a alguém" value="Não" onclick="habilitar_btn_enviar()">
                     <label for="quest2-radio-nao" class="quest2-label" id="quest2-label-nao">Não</label>
                 </div>
             </div>
-        </fieldset>
+        </fieldset> -->
 
         <input type="hidden" name="subject" value="Uma resposta da Pesquisa Social foi enviada">
         <input type="hidden" name="replyTo" id="email" value="paulactalim@gmail.com">
-        <input type="hidden" name="redirectTo" id="redirectTo" value="https://paulatalim.github.io/pesquisa-social/pages/finalizar_pesquisa.html">
+        <!-- <input type="hidden" name="redirectTo" id="redirectTo" value="https://paulatalim.github.io/pesquisa-social/pages/finalizar_pesquisa.html"> -->
+        <input type="hidden" name="redirectTo" id="redirectTo" value="http://127.0.0.1:5500/pages/finalizar_pesquisa.html">
+         
         <button class="btn-enviar" id="btn-enviar" type="submit">Enviar</button>
     </form>
 </body>
